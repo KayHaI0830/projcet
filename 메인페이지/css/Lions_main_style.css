@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li {list-style: none;}
+a {
+    text-decoration: none;
+}
+
+
+/* 헤더 */
+/*
+.clearfix {
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.respon-img{
+    display: block;
+    width: 7vw;
+    height: 7vw;
+}
+
+#login{
+    margin-right: 3vw;
+}
+
+.color-main{
+    color:#292929 !important;
+}
+  
+header{
+    border: 1px solid black;
+    width: 100%;
+    height: 40vw;
+    background: url("../images/header_main.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.nav-top{
+    position: fixed;
+    width: 100%;
+    padding: 15px 10px;
+    background: rgba(0,0,0,0);
+}
+
+  
+
+
+.btn-menu{
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+}
+*/
+
+/* 사이드메뉴 */
+/*
+.side-menu {
+    display: none;
+}
+
+.side-menu-wrap{
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    
+}
+
+.side-menu-wrap > #cancel_img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.side-menu-wrap > #cancel_img > img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.side-menu-box{
+    position: absolute;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: #f6f6f6;
+}
+*/
+
+/* 스크롤바 안보이게 설정 */
+/*
+.snb{
+    height: calc(100% - 155px);
+    overflow-y:scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.snb::-webkit-scrollbar{
+    display: none;
+}
+
+.snb > ul > li{
+    position: relative;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.snb > ul > li > a{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing:border-box;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.snb > ul > li > a:after{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 15px;
+    height: 10px;
+    background: url('https://lostinyou4.github.io/leesm/study/images/snb_icon.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.snb > ul > li.on > a:after{
+    background: url('https://lostinyou4.github.io/leesm/study/images/snb_icon.png') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.snb > ul > li.on > a{
+    color: #025fac;
+}
+
+.snb > ul > li > ul{
+    display: block;
+}
+
+.snb > ul > li.on > ul{
+    display: none;
+}
+
+.snb > ul > li > ul > li a{
+    display: block;
+    padding: 12px 40px;
+    color: #025fac;
+}
+
+.snb > ul > li > ul > li:first-child{
+    padding-top: 2px;
+}
+
+.snb > ul > li > ul > li:last-child{
+    padding-bottom: 20px;
+}
+*/
+
+/* 섹션 */
+section {
+    box-sizing: border-box;
+}
+
+/* 경기 일정 */
+body > section > #calender_wrap {
+    text-align: center;
+    margin: 15vw auto;
+}
+
+#calender_wrap > h2 {
+    margin-bottom: 20px;
+}
+
+#vs_calender {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15vw;
+    box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+    border-radius: 10px;
+    padding: 4vw 2vw 10vw 2vw;
+}
+
+#vs {
+    width: 100%;
+    text-align: center;
+}
+
+#vs_date {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+#vs_time {
+    font-size: 16px;
+}
+
+#vs_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+#vs_content > div {
+    width: 20vw;
+}
+
+#samsung > p, #vs_rival > p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#vs_content div > img {
+    width: 100%;
+}
+
+#vs_content #score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    margin-top: 2vw;
+}
+
+#result > p {
+    width: 70%;
+    margin: 3vw auto;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:386px) {
+    #samsung > p, #vs_rival > p, #result > p {
+        font-size: 12px;
+    }
+}
+
+#calender{
+    display: none;
+}
+
+/* 라이온즈 뉴스 */
+body > section > #notice {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15vw;
+}
+
+body > section > #notice .text {
+  width: 70%;
+  padding-top: 2vw;
+  padding-left: 2vw;
+  font-size: 0.7vh;
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+
+body > section > #notice  #preview {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+    width: 100%;
+    margin-bottom: 15vw;
+}
+
+
+body > section > #notice > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body > section > #notice .news {
+  width: 90%;
+  margin: 30px auto;
+}
+
+body > section > #notice  #news {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+    margin-bottom: 15vw;
+}
+
+body > section > #notice .news {
+  display: flex;
+}
+
+body > section > #notice .news img {
+  width: 30vw;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* 하이라이트 */
+body > section > #highlight {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10vw;
+}
+
+body > section > #highlight > h2 {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+
+body > section > #highlight > #container {
+    width: 100%;
+}
+
+body > section > #highlight > #container > #video {
+    width: 100%;
+    height: 50vw;
+    margin-bottom: 3vw;
+}
+
+body > section > #highlight > #container > #video > iframe {
+  width: 100%;
+  height: 50vw;
+  border-radius: 10px;
+
+}
+
+body > section > #highlight > #container > #video_contents {
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+    padding-top: 4vw;
+    padding-bottom: 7vw;
+    margin-bottom: 3vw;
+}
+
+body > section > #highlight > #container > #video_contents iframe {
+  width: 40%;
+  height: 20vw;
+  border-radius: 10px;
+}
+
+body > section > #highlight > #container > #video_contents .text {
+  width: 60%;
+  padding-top: 1.5vw;  
+  padding-left: 1.5vw;
+  padding-right: 2vw;
+  font-size: 0.7vw;
+}
+
+body > section > #highlight > #container  #video_contents_1 {
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    margin: 3vw auto;
+    padding-left: 3vw;
+}
+
+body > section > #highlight > #container  #video_contents_2 {
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    margin: 3vw auto;
+    padding-left: 3vw;
+}
+
+body > section > #highlight > #container  #video_contents_3 {
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    padding-left: 3vw;
+}
+
+/* 선수단 */
+body > section > #intro {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > section > #intro > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body > section > #intro img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 7vw;
+}
+
+body > section > #intro  #intro_1 {
+    width: 100%;
+}
+
+body > section > #intro  #intro_2 {
+    width: 100%;
+}
+
+/* 온라인 스토어 */
+body > section > #store {
+    width: 60%;
+    margin: 0 auto;
+}
+
+body > section > #store img {
+  width: 100%;
+  margin: 0 auto;/* 
+  margin-bottom: 10vw; */
+}
+
+@media screen and (max-width:995px) {
+    body > section > #store img {
+        margin-bottom: 10vw;
+    }
+}
+
+body > section > #store #mall_go > #carousel {
+    display: none;
+}
+
+/* 스폰서 */
+body > section > #sponsers {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 8vw;
+}
+
+body > section > #sponsers > img {
+    width: 100%;
+    height: 20vw;
+    padding: 0.7vw;
+}
+
+/* 콘텐츠 내 버튼 */
+body > section > .button {
+    width: 30vw;
+    height: 10vw;
+    margin: 0 auto;
+    margin-bottom: 20vw;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    line-height: 10vw;
+    font-size: 3vw;
+    color: #000000;
+    text-align: center;
+}
+
+body > section > .button > a {
+  color: #292929;
+}
+
+/* 섹션 내 타이틀 */
+body > section .title {
+    font-size: 5vw;
+    font-weight: bold;
+    color: #404040;
+}
+
+/* 섹션 내 날짜 */
+body > section .date {
+  color: gray;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+body > section .highlight_date {
+  color: gray;
+  font-size: 1vw;
+}
+
+/* 섹션 내 헤드라인 */
+body > section .headline {
+  font-size: 2.5vw;
+  font-weight: bolder;
+  color: #404040;
+  width: calc(100% - 10%);
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  max-height: 2em;
+  margin-bottom: 0.2vw;
+}
+
+body > section .headline2 {
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #404040;
+    width: calc(100% - 5%);
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: auto;
+    margin-bottom: 0.2vw;
+}
+
+
+/* 섹션 내 파티클 */
+body > section .particle {
+  width: calc(100% - 10%);
+  font-size: 2vw;
+  font-weight: lighter;
+  color: #404040;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  max-height: 1.5em;
+}
+
+@media  screen and (min-width: 996px) {
+    /* 헤더 */
+    /*
+    .clearfix {
+        display: none;
+    }
+    */
+
+
+    /* 섹션 */
+    /* 경기일정*/
+    body > section > #calender_wrap {
+        margin-top: 10vw;
+        margin-bottom: -5vw;
+        background-color: #EEF6FF;
+        padding-top: 2vw;
+    }
+    
+    
+    #vs_calender {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #vs {
+        width: 60%;
+    }
+
+    #vs_date {
+        font-size: 26px;
+    }
+
+    #vs_time {
+        font-size: 20px;
+    }
+
+    #vs_content {
+        margin: 0;
+    }
+
+    #vs_content > div {
+        width: 40%;
+    }
+
+    /* 수정 s */
+    #vs_content > div > img {
+        height: 10vw; /* temp */
+    }
+
+    #vs_content #score {
+        font-size: 50px;
+        margin: 30px;
+    }
+
+    #result > p {
+        width: 120px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    #calender {
+        width: 36%;
+        /* max-width: 350px; */
+        text-align: center;
+        display: block !important;
+    }
+
+    #calender_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #calender_header > p:nth-of-type(2) {
+        font-size: 16;
+    }
+
+    #calender_header > .btn:first-of-type {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    #calender_header > .btn:last-of-type {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    
+    #calender_header > .btn:hover {
+        cursor: pointer;
+    }
+    
+    #calender_content {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    #calender_table {
+        width: 100%;
+        margin-top: 1vw;
+        border-spacing: 0.3vw 0.6vw;
+    }
+
+    #calender_table td {
+        font-size: 1vw;
+        padding: 8px;
+        border-radius: 100%;
+    }
+
+    .calender_date:hover {
+        cursor: pointer;
+    }
+
+    .day {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .sun {
+        color: rgb(202, 67, 65);
+    }
+
+    .sat {
+        color: #025FAC;
+    }
+
+    .today {
+        background: rgba(255, 255, 0, 0.5);
+    }
+
+    .date_vs {
+        background-color: rgba(230, 230, 230, 0.5);
+    }
+
+    /* 라이온즈 뉴스 */
+    body > section > #notice {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: -5vw;
+    }
+    
+    body > section > #notice > #notice_divide {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    body > section > #notice .text {
+        width: 70%;
+        padding-top: 0.2vw;
+        padding-left: 0.5vw;
+        font-size: 0.3vh;
+        font-weight: bold;
+    }
+
+    body > section > #notice  #preview {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+        width: 45%;
+
+    }
+    
+    body > section > #notice .news {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    body > section > #notice  #news {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        width: 45%;
+        box-shadow: 0px 3px 3px rgb(0, 27, 100,0.34);
+
+    }
+
+    body > section > #notice .news {
+        display: flex;
+    }
+
+    body > section > #notice .news img {
+        width: 13vw;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    /* 하이라이트 */
+    body > section > #highlight {
+        width: 100%;
+        height: auto;
+        background-color: #EEF6FF;
+        padding-top: 2vw;
+        margin-bottom: 10vw;
+    }
+
+    body > section > #highlight > h2 {
+        text-align: center;
+        margin-bottom: 2vw;
+        color: #404040;
+    }
+
+    body > section > #highlight > #container {
+        width: 65%;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    body > section > #highlight > #container > #video {
+        width: 64%;
+        height: auto;
+        aspect-ratio: 16/9;
+        margin-bottom: 4vw;
+    }
+
+    body > section > #highlight > #container > #video > iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border-radius: 15px;
+    }
+
+    body > section > #highlight > #container > #video_contents {
+        border-radius: none;
+        box-shadow: none;
+        width: 36%;
+        height: auto;
+        aspect-ratio: 16/9;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 5vw;
+    }
+
+    body > section > #highlight > #container > #video_contents iframe {
+        width: 55%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+      }
+
+    body > section > #highlight > #container  #video_contents_1 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.79vw;
+        margin-top: 0;
+    }
+
+    body > section > #highlight > #container  #video_contents_2 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0.79vw;
+    }
+
+    body > section > #highlight > #container  #video_contents_3 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+    }
+
+    body > section > #highlight > #container > #video_contents .text {
+        width: 100%;
+        padding-top: 0.5vw;  
+        padding-left: 1vw;
+        font-size: 0.1vw;
+    }
+
+    /* 선수단 */
+    body > section > #intro {
+        width: 66%;
+        margin-bottom: 2vw;
+    }
+
+    body > section > #intro > #intro_divide {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > section > #intro img {
+        padding: 1vw;
+        margin-bottom: 0;
+        border-radius: 30px;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    /* 온라인 스토어 */
+    body > section > #store {
+        width: 100%;
+        background-color: #EEF6FF;
+        padding-bottom: 3vw;
+        padding-top: 3vw;
+    }
+
+    body > section > #store > #store_divide {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    body > section > #store #mall_go {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    body > section > #store #mall_go > #carousel {
+        display: block;
+        background-color: coral;
+        margin-bottom: 0;
+    }
+
+    body > section > #store #mall_go > a > img {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    body > section > #store #ticket_go {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    body > section > #store #ticket_go > a > img {
+        max-width: 450px;
+        margin-bottom: 0;
+    }
+
+    /* 스폰서 */
+    body > section > #sponsers {
+        width: 58.5%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vw;
+    }
+
+    body > section > #sponsers > img {
+        width: 33%;
+        height: 7vw;
+    }
+
+    /* 콘텐츠 내 버튼 */
+    body > section > .button {
+        width: 10vw;
+        height: 3vw;
+        margin: 0 auto;
+        margin-bottom: 10vw;
+        border: 1px solid #707070;
+        border-radius: 70px;
+        line-height: 3vw;
+        font-size: 1vw;
+        color: #000000;
+        text-align: center;
+    }
+    /* 섹션 내 타이틀 */
+    body > section .title {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+    /* 섹션 내 날짜 */
+    body > section .date {
+        color: gray;
+        font-size: 0.7vw;
+        margin-bottom: 0.9vw;
+    }
+  
+    body > section .highlight_date {
+        color: gray;
+        font-size: 1vw;
+    }
+  
+    /* 섹션 내 헤드라인 */
+    body > section .headline {
+        font-size: 1vw;
+        font-weight: bolder;
+        margin-bottom: 0.2vw;
+        color: #404040;
+        width: calc(100% - 17%);
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        max-height: 2em;
+    }
+
+    body > section .headline2 {
+        font-size: 1.2vw;
+        font-weight: bolder;
+        margin-bottom: 0.2vw;
+        color: #404040;
+        width: calc(100% - 10%);
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        max-height: auto;
+    }
+  
+    /* 섹션 내 파티클 */
+    body > section .particle {
+        font-size: 0.8vw;
+        color: #404040;
+        width: calc(100% - 18%);
+        font-weight: lighter;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-height: 6em;
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-height: 20px;
+        white-space: normal;
+    }
+}

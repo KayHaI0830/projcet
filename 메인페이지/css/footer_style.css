@@ -1,0 +1,86 @@
+.footer_wrapper {
+    background-color: #304158;
+    margin-top: 50px;
+}
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: black;
+    text-align: center;
+}
+footer p {
+    font-size: 15px;
+    color: white;
+}
+.footer_copyright {
+    color: rgb(184, 184, 184);
+}
+
+/* top 버튼 */
+.footer_top_btn {
+    display: inline-block;
+    padding: 2px 20px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: black;
+    background-color: white;
+}
+
+/* 링크 */
+.footer_link {
+    margin: 10px 0 15px;
+}
+.footer_link > a {
+    color: white;
+    font-weight: bold;
+}
+
+/* 대표 링크 */
+.footer_representative {
+    margin-bottom: 10px;
+}
+
+/* pc */
+.footer_pc {
+    display: none;
+}
+
+
+@media screen and (min-width:996px) {
+    footer {
+        padding-bottom: 60px;
+    }
+    .footer_mobile {
+        display: none;
+    }
+    .footer_pc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .footer_pc > img {
+        width:100px;
+        height: auto;
+    }
+    .footer_pc_text {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .footer_pc_link {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0 0 15px;
+    }
+    .footer_pc_link a {
+        color: white;
+    }
+    .footer_pc_address > p {
+        color: rgb(184, 184, 184);
+    }
+}
